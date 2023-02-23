@@ -1,0 +1,350 @@
+Microsoft Windows [Version 10.0.19044.2604]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\farca>cd Desktop
+
+C:\Users\farca\Desktop>mkdir gitTraining
+
+C:\Users\farca\Desktop>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\farca\Desktop>ls all
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\farca\Desktop>list
+'list' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\farca\Desktop>cd gitTraining
+
+C:\Users\farca\Desktop\gitTraining>git init
+Initialized empty Git repository in C:/Users/farca/Desktop/gitTraining/.git/
+
+C:\Users\farca\Desktop\gitTraining>git clone https://github.com/TiberiuFarcasAdrian/testare.git
+Cloning into 'testare'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+
+C:\Users\farca\Desktop\gitTraining>dir
+ Volume in drive C is Acer
+ Volume Serial Number is EEF6-05BD
+
+ Directory of C:\Users\farca\Desktop\gitTraining
+
+23/02/2023  10:52    <DIR>          .
+23/02/2023  10:52    <DIR>          ..
+23/02/2023  10:52    <DIR>          testare
+               0 File(s)              0 bytes
+               3 Dir(s)  233,031,901,184 bytes free
+
+C:\Users\farca\Desktop\gitTraining>mkfile
+'mkfile' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\farca\Desktop\gitTraining>nul > testing.txt
+Access is denied.
+
+C:\Users\farca\Desktop\gitTraining>dir
+ Volume in drive C is Acer
+ Volume Serial Number is EEF6-05BD
+
+ Directory of C:\Users\farca\Desktop\gitTraining
+
+23/02/2023  10:57    <DIR>          .
+23/02/2023  10:57    <DIR>          ..
+23/02/2023  10:52    <DIR>          testare
+23/02/2023  10:57                 0 testing.txt
+               1 File(s)              0 bytes
+               3 Dir(s)  233,036,410,880 bytes free
+
+C:\Users\farca\Desktop\gitTraining>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        testare/
+        testing.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\farca\Desktop\gitTraining>git add .
+warning: adding embedded git repository: testare
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> testare
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached testare
+hint:
+hint: See "git help submodule" for more information.
+
+C:\Users\farca\Desktop\gitTraining>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   testare
+        new file:   testing.txt
+
+
+C:\Users\farca\Desktop\gitTraining>git commit -m "Initial commit"
+[master (root-commit) 04ec660] Initial commit
+ 2 files changed, 2 insertions(+)
+ create mode 160000 testare
+ create mode 100644 testing.txt
+
+C:\Users\farca\Desktop\gitTraining>git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+
+C:\Users\farca\Desktop\gitTraining>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\farca\Desktop\gitTraining>git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+
+C:\Users\farca\Desktop\gitTraining>git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Users\farca\Desktop\gitTraining>git remote -v
+
+C:\Users\farca\Desktop\gitTraining>git show-ref
+04ec660f88851c3aff46b570af665d36af1e827f refs/heads/master
+
+C:\Users\farca\Desktop\gitTraining>git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+
+C:\Users\farca\Desktop\gitTraining>git show-ref
+04ec660f88851c3aff46b570af665d36af1e827f refs/heads/master
+
+C:\Users\farca\Desktop\gitTraining>git branch -m main
+
+C:\Users\farca\Desktop\gitTraining>git show-ref
+04ec660f88851c3aff46b570af665d36af1e827f refs/heads/main
+
+C:\Users\farca\Desktop\gitTraining>git origin main
+git: 'origin' is not a git command. See 'git --help'.
+
+C:\Users\farca\Desktop\gitTraining>git push origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Users\farca\Desktop\gitTraining>git push -u origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Users\farca\Desktop\gitTraining>git remote -v
+
+C:\Users\farca\Desktop\gitTraining>git remote add https://github.com/TiberiuFarcasAdrian/testare.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+C:\Users\farca\Desktop\gitTraining>git remote -v
+
+C:\Users\farca\Desktop\gitTraining>git push -u origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Users\farca\Desktop\gitTraining>git remote add origin https://github.com/TiberiuFarcasAdrian/testare.git
+
+C:\Users\farca\Desktop\gitTraining>git remote -v
+origin  https://github.com/TiberiuFarcasAdrian/testare.git (fetch)
+origin  https://github.com/TiberiuFarcasAdrian/testare.git (push)
+
+C:\Users\farca\Desktop\gitTraining>git push -u origin main
+To https://github.com/TiberiuFarcasAdrian/testare.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/TiberiuFarcasAdrian/testare.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\farca\Desktop\gitTraining>git pull origin main
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.21 KiB | 39.00 KiB/s, done.
+From https://github.com/TiberiuFarcasAdrian/testare
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> origin/main
+fatal: refusing to merge unrelated histories
+
+C:\Users\farca\Desktop\gitTraining>git push -u origin main
+To https://github.com/TiberiuFarcasAdrian/testare.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/TiberiuFarcasAdrian/testare.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\farca\Desktop\gitTraining>git pull origin main
+From https://github.com/TiberiuFarcasAdrian/testare
+ * branch            main       -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+C:\Users\farca\Desktop\gitTraining>git status
+On branch main
+nothing to commit, working tree clean
+
+C:\Users\farca\Desktop\gitTraining>
+C:\Users\farca\Desktop\gitTraining>git show-ref
+04ec660f88851c3aff46b570af665d36af1e827f refs/heads/main
+535fab35172e435ff66c3b324371db7387861a52 refs/remotes/origin/main
+
+C:\Users\farca\Desktop\gitTraining>git log
+commit 04ec660f88851c3aff46b570af665d36af1e827f (HEAD -> main)
+Author: Farcas <mcovaci082@gmail.com>
+Date:   Thu Feb 23 11:00:29 2023 +0200
+
+    Initial commit
+
+C:\Users\farca\Desktop\gitTraining>git push -f origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 256 bytes | 128.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/TiberiuFarcasAdrian/testare.git
+ + 535fab3...04ec660 main -> main (forced update)
+
+C:\Users\farca\Desktop\gitTraining>git status
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    testare
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\farca\Desktop\gitTraining>git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+C:\Users\farca\Desktop\gitTraining>git add .
+
+C:\Users\farca\Desktop\gitTraining>git commit "second commit"
+error: pathspec 'second commit' did not match any file(s) known to git
+
+C:\Users\farca\Desktop\gitTraining>git commit -m "second commit"
+[main d09adbe] second commit
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 README.md
+ delete mode 160000 testare
+
+C:\Users\farca\Desktop\gitTraining>git push -f origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 304 bytes | 304.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/TiberiuFarcasAdrian/testare.git
+   04ec660..d09adbe  main -> main
+
+C:\Users\farca\Desktop\gitTraining>git checkout -b "branchNou"
+Switched to a new branch 'branchNou'
+
+C:\Users\farca\Desktop\gitTraining>mkdir dirNou
+
+C:\Users\farca\Desktop\gitTraining>git status
+On branch branchNou
+nothing to commit, working tree clean
+
+C:\Users\farca\Desktop\gitTraining>git log
+commit d09adbe96a74cf7a63f8b58ed673e1b770c50ecc (HEAD -> branchNou, origin/main, main)
+Author: Farcas <mcovaci082@gmail.com>
+Date:   Thu Feb 23 11:24:13 2023 +0200
+
+    second commit
+
+commit 04ec660f88851c3aff46b570af665d36af1e827f
+Author: Farcas <mcovaci082@gmail.com>
+Date:   Thu Feb 23 11:00:29 2023 +0200
+
+    Initial commit
+
+C:\Users\farca\Desktop\gitTraining>git add .
+
+C:\Users\farca\Desktop\gitTraining>git commit -m "third commit"
+On branch branchNou
+nothing to commit, working tree clean
+
+C:\Users\farca\Desktop\gitTraining>git status
+On branch branchNou
+nothing to commit, working tree clean
+
+C:\Users\farca\Desktop\gitTraining>git log
+commit d09adbe96a74cf7a63f8b58ed673e1b770c50ecc (HEAD -> branchNou, origin/main, main)
+Author: Farcas <mcovaci082@gmail.com>
+Date:   Thu Feb 23 11:24:13 2023 +0200
+
+    second commit
+
+commit 04ec660f88851c3aff46b570af665d36af1e827f
+Author: Farcas <mcovaci082@gmail.com>
+Date:   Thu Feb 23 11:00:29 2023 +0200
+
+    Initial commit
+
+C:\Users\farca\Desktop\gitTraining>git status
+On branch branchNou
+nothing to commit, working tree clean
+
+C:\Users\farca\Desktop\gitTraining>git checkout main
+Switched to branch 'main'
+
+C:\Users\farca\Desktop\gitTraining>git status
+On branch main
+nothing to commit, working tree clean
+
+C:\Users\farca\Desktop\gitTraining>
